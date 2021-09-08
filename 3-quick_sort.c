@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * swap - sway two integers in an array
+ * swap_q - sway two integers in an array
  * @x: integer
  * @y: integer
  * Return: no return
