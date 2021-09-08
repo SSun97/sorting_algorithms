@@ -7,7 +7,7 @@
  * Return: no return
  */
 
-void swap(int *x, int *y)
+void swap_q(int *x, int *y)
 {
 	int temp;
 
@@ -37,13 +37,13 @@ int Partition(int *A, int p, int r, size_t size)
 		if (A[j] <= x)
 		{
 			i++;
-			swap(&A[i], &A[j]);
+			swap_q(&A[i], &A[j]);
 			if (j != i)
 				print_array(A, size);
 		}
 	}
 
-	swap(&A[i + 1], &A[r]);
+	swap_q(&A[i + 1], &A[r]);
 	if (i + 1 != r)
 		print_array(A, size);
 
