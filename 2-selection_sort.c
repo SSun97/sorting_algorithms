@@ -1,13 +1,13 @@
 #include "sort.h"
 
 /**
- * swap - swap two integers
+ * swap_k - swap two integers
  * @xp: first integer
  * @yp: second integer
  * Return: no return
  */
 
-void swap(int *xp, int *yp)
+void swap_k(int *xp, int *yp)
 {
 	int temp = *xp;
 	*xp = *yp;
@@ -36,7 +36,7 @@ void selection_sort(int *array, size_t size)
 			if (array[j] < array[min_idx])
 				min_idx = j;
 
-		swap(&array[min_idx], &array[i]);
+		swap_k(&array[min_idx], &array[i]);
 
 		if (min_idx != i)
 			print_array(array, size);
